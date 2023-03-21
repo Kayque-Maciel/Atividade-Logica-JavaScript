@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média em JavaScript</h1>
+    <script>
+        let soma  = 0
+        let acumulador = 0
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota"))
+        if(nota1 > 0 && nota1 < 10) {
+            soma = soma + nota1
+            acumulador = acumulador + 1
+        }
+
+        let nota2 = parseFloat(prompt("Digite a segunda nota"))
+        if(nota2 > 0 && nota2 < 10) {
+            soma = soma + nota2
+            acumulador = acumulador + 1
+        }
+
+        let nota3 = parseFloat(prompt("Digite a terceira nota"))
+        if(nota3 > 0 && nota3 < 10) {
+            soma = soma + nota3
+            acumulador = acumulador + 1
+        }
+
+        let nota4 = parseFloat(prompt("Digite a quarta nota"))
+        if(nota4 > 0 && nota4 < 10) {
+            soma = soma + nota4
+            acumulador = acumulador + 1
+        }
+
+        let  media = soma / acumulador
+
+        document.write("A média é: " + media)
+        document.write("<br>")
+        if (soma>5) {
+            document.write("Você passou no teste")
+        }else{
+            document.write("Tente novamente")
+        }
+
+    </script>
+</body>
+</html>
